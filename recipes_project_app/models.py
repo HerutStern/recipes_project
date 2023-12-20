@@ -13,6 +13,9 @@ class Recipe(models.Model):
     level = models.SmallIntegerField(max_length=10, db_column='level',
                                      validators=[validator_level])
 
+    class Meta:
+        db_table = 'recipe'
+
 # Rating
 
 # Create your models here.
